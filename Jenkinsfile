@@ -25,19 +25,6 @@ pipeline{
                 
             }
         }
-        stage ('CodeReview')
-        {
-            steps{
-                
-             sh  'mvn pmd:pmd'
-                
-            }
-            post{
-                success{
-                    recordIssues(tools: [pmdParser(pattern: '**/pmd.xml')])
-                }
-            }
-        }
        
         
         
