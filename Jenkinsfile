@@ -1,5 +1,5 @@
 pipeline{
-    
+    //Pipeline demo code
     tools{
         // what tool version to use for build stages
         maven 'mymaven'
